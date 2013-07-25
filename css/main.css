@@ -7,6 +7,7 @@
 
 body {
   background: #fff;
+  color: #111;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -42,6 +43,9 @@ h1 a {
 }
 h1 a:hover { text-decoration: none; color: #ff3a2f; }
 
+p, li {
+  line-height: 1.5em;
+}
 
 pre, code {
   font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
@@ -70,7 +74,9 @@ pre {
 .unstyled li { list-style: none; }
 .unstyled li li { padding-left: 10px; }
 
-
+.horizontal li {
+  display: inline-block;
+}
 
 
 @media (min-width: 479px) {
@@ -81,7 +87,7 @@ pre {
   
   [class*="span"] {
     float: left;
-    padding-left: 20px;
+    padding-left: 40px;
   }
 
   .span-lead {
@@ -126,6 +132,28 @@ header h1 {
 }
 header h4 {
   margin-top: 0;
+}
+
+/* Bio Styles */
+
+.bio {
+  font-size: .9em;
+  color: #333;
+}
+
+/* Post Styles */
+.meta {
+  font-size: .85em;
+  
+}
+.metasplit {
+  padding-left: 5px;
+  margin-left: 5px;
+  border-left: 1px solid #aaa;
+}
+
+.category {
+  font-style: italic;
 }
 
 

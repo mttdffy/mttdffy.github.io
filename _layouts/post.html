@@ -6,7 +6,18 @@ layout: default
 
   <article class="span6 span-lead">
     <h2>{{ page.title }}</h2>
-    <p class="meta">{{ page.date | date_to_string }}</p>
+   
+    <ul class="unstyled horizontal meta">
+      <li>{{ page.date | date_to_string }}</li>
+
+      {% if page.categories %}
+        <li class="metasplit">Tagged: </li>
+        {% for cat in page.categories %}
+          <li class="category">{{ cat }}</li>
+        {% endfor %}
+      {% endif %}
+    </ul>
+    
 
     <div class="post">
     {{ content }}
@@ -15,6 +26,17 @@ layout: default
 
   <aside class="span2">
     
+    <h3>Other Posts</h3>
+    <ul class="unstyled posts">
+      {% for post in site.posts %}
+       {% if page.title != post.title %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
   </aside>
 
 </div>
