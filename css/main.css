@@ -30,10 +30,19 @@ body {
 h1,h2,h3 {
   font-family: 'Vollkorn', serif;
   margin: 5px 0;
+  font-weight: normal;
+}
+
+h3 {
+  color: #2a9c4c;
+}
+
+h4,h5,h6 {
+  font-weight: normal;
 }
 
 a {
-  color: #ff3a2f;
+  color: #3d9ecf;
   text-decoration: none;
 }
 a:hover { text-decoration: underline; }
@@ -41,7 +50,7 @@ a:hover { text-decoration: underline; }
 h1 a {
   color: inherit;
 }
-h1 a:hover { text-decoration: none; color: #ff3a2f; }
+h1 a:hover { text-decoration: none; color: #3d9ecf; }
 
 p, li {
   line-height: 1.5em;
@@ -142,6 +151,17 @@ header h4 {
 }
 
 /* Post Styles */
+
+.post h3 {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DDD;
+}
+
+.postfooter {
+  margin: 40px 0 20px;
+}
+
 .meta {
   font-size: .85em;
   
@@ -156,5 +176,11 @@ header h4 {
   font-style: italic;
 }
 
+/* Footer Styles*/
+footer {
+  margin: 20px 0;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+}
 
 
