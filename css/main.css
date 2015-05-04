@@ -15,8 +15,8 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 1100px;
-  padding: 20px;
+  max-width: 600px;
+  padding: 10px;
   margin: 0 auto;
 }
 
@@ -26,34 +26,59 @@ body {
 }
 
 /* TYPE */
-
-h1,h2,h3 {
-  font-family: 'Vollkorn', serif;
-  margin: 5px 0;
-  font-weight: normal;
+h1,h2,h3,h4,h5 {
+  font-family: "Raleway", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: 0;
+  font-weight: 200;
 }
 
-h3 {
-  color: #2a9c4c;
+h4,h5,p,li { font-family: Helvetica, Arial, sans-serif; }
+
+h1 {
+  font-size: 3.2em;
 }
+
+h2 {
+  font-size: 1.4em;
+}
+
+h2,h3 { font-weight: 600; }
+
 
 h4,h5,h6 {
   font-weight: normal;
 }
 
+h5 {
+  font-size: .6em;
+  color: #AAA;
+}
+
+p,ul {
+  font-size: .95em;
+  line-height: 1.6em;
+  color: #666;
+}
+
+ul {
+  padding-left: 15px;
+}
+ul.unstyled {
+  padding-left: 0;
+}
+ul.unstyled li {
+  list-style: none;
+}
+
 a {
-  color: #3d9ecf;
+  color: #ea2a45;
   text-decoration: none;
 }
-a:hover { text-decoration: underline; }
 
-h1 a {
-  color: inherit;
-}
-h1 a:hover { text-decoration: none; color: #3d9ecf; }
+h1 a { color: inherit; }
 
-p, li {
-  line-height: 1.5em;
+.heading-title {
+  padding-bottom: 10px;
 }
 
 pre, code {
@@ -93,7 +118,7 @@ pre {
 }
 
 @media (min-width: 767px) {
-  
+
   [class*="span"] {
     float: left;
     padding-left: 40px;
@@ -131,7 +156,7 @@ pre {
 }
 
 @media (min-width: 1023px) {
-  
+
 }
 
 /* Header Styles */
@@ -152,6 +177,8 @@ header h4 {
 
 /* Post Styles */
 
+.post-wrapper { padding-top: 40px; }
+
 .post h3 {
   margin-top: 20px;
   padding-bottom: 10px;
@@ -164,7 +191,7 @@ header h4 {
 
 .meta {
   font-size: .85em;
-  
+
 }
 .metasplit {
   padding-left: 5px;
@@ -182,5 +209,4 @@ footer {
   padding-top: 10px;
   border-top: 1px solid #DDD;
 }
-
 
