@@ -6,24 +6,42 @@ title: Full-Stack Development
 <div class="row">
   <div class="span8 span-lead">
     <p>
-      A developer with a designer's intuition, I work to build both scalable and maintainable applications that are beautiful in every sense of the word. I've worked for clients ranging from small, one-man startups to large corporations. I started my career as a designer but quickly realized my true passion was bringing designs to life through development. My skills span from the front-end, with semantic HTML5, flexible CSS, and modular Javascript, to the back-end, creating a scalable architecture with Node.js or Ruby on Rails.
+      I work to build scalable and maintainable applications. I've worked for clients ranging from small, one-man startups to large corporations. I started my career as a designer but quickly realized my true passion was bringing ideas to life through development. My focus is back-end development and architecture, but I have experience across the entire spectrum of software development.
     </p>
 
     <p>
-      I'm currently a rails developer at <a href="http://www.weblinc.com">WebLinc</a>. I occasionally work at <a href="http://drexel.edu">Drexel University</a>, teaching  web development courses in both front-end development and Rails-based web applications.
+      I'm currently a rails developer at <a href="http://www.weblinc.com">WebLinc</a>, part of the product team working to continually improve our commerce platform, <a href="https://www.workarea.com" >Workarea</a>. In another life I was a designer and a teacher, occasionally teaching courses at <a href="http://drexel.edu">Drexel University</a> for their Digital Media program.
     </p>
   </div>
 
-  <section class="span4 span-lead">
+  <!-- <section class="span4 span-lead">
     <h3>Projects</h3>
     <ul class="unstyled">
       <li><a href="https://github.com/mttdffy/action_permission">ActionPermission</a></li>
       <li><a href="https://github.com/mttdffy/buckle">Buckle Front-End Framework</a></li>
       <li><a href="https://github.com/mttdffy/wbdv465">Rails Drexel Course</a></li>
     </ul>
+  </section> -->
+
+  <section class="span5 span-lead">
+
+    <h3>Recent Articles</h3>
+    <ul class="unstyled posts">
+      {% for post in site.posts %}
+        <li class="post__summary">
+          <span class="post__date">{{ post.date | date_to_string }}</span>
+          <br>
+          <a class="post__link" href="{{ post.url }}">{{ post.title }}</a>
+          <div class="post__excerpt">
+            {{post.excerpt}}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+
   </section>
 
-  <section class="span4">
+  <section class="span3">
     <h3>Find me.</h3>
     <ul class="unstyled">
        <li><a href="http://www.linkedin.com/pub/matt-duffy/13/b30/955">LinkedIn Profile</a></li>
@@ -31,23 +49,4 @@ title: Full-Stack Development
       <li>Github: <a href="https://github.com/mttdffy">mttdffy</a></li>
     </ul>
   </section>
-</div>
-
-<div class="row">
-  <div class="span6 span-lead">
-
-    <h3>Recent Articles</h3>
-    <ul class="unstyled posts">
-      {% for post in site.posts %}
-        <li>
-          <span>{{ post.date | date_to_string }} - </span>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <!-- <div class="postsummary">
-            {{post.excerpt}}
-          </div> -->
-        </li>
-      {% endfor %}
-    </ul>
-
-  </div>
 </div>

@@ -15,7 +15,7 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 600px;
+  max-width: 760px;
   padding: 10px;
   margin: 0 auto;
 }
@@ -54,7 +54,7 @@ h5 {
   color: #AAA;
 }
 
-p,ul {
+p, ul, ol {
   font-size: .95em;
   line-height: 1.6em;
   color: #666;
@@ -63,9 +63,11 @@ p,ul {
 ul {
   padding-left: 15px;
 }
+
 ul.unstyled {
   padding-left: 0;
 }
+
 ul.unstyled li {
   list-style: none;
 }
@@ -177,6 +179,13 @@ header h4 {
 
 /* Post Styles */
 
+.posts { margin-top: 5px; }
+
+.post__summary {
+  padding: 10px 0;
+  border-bottom: 1px solid #DDD;
+}
+
 .post-wrapper { padding-top: 40px; }
 
 .post h3 {
@@ -209,4 +218,3 @@ footer {
   padding-top: 10px;
   border-top: 1px solid #DDD;
 }
-
