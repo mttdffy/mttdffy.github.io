@@ -1,52 +1,44 @@
 ---
 layout: default
-title: Development
+title: Software Engineer
 ---
 
 <div class="row">
   <div class="span8 span-lead">
-    <p>
+    <!-- <p>
       I work to build scalable and maintainable applications. I've worked for clients ranging from small, one-man startups to large corporations. I started my career as a designer but quickly realized my true passion was bringing ideas to life through development. My focus is back-end development and architecture, but I have experience across the entire spectrum of software development.
     </p>
 
     <p>
       I'm currently a rails developer at <a href="http://www.weblinc.com">WebLinc</a>, part of the product team working to continually improve our commerce platform, <a href="https://www.workarea.com" >Workarea</a>. In another life I was a designer and a teacher, occasionally teaching courses at <a href="http://drexel.edu">Drexel University</a> for their Digital Media program.
-    </p>
+    </p> -->
   </div>
 
-  <!-- <section class="span4 span-lead">
-    <h3>Projects</h3>
-    <ul class="unstyled">
-      <li><a href="https://github.com/mttdffy/action_permission">ActionPermission</a></li>
-      <li><a href="https://github.com/mttdffy/buckle">Buckle Front-End Framework</a></li>
-      <li><a href="https://github.com/mttdffy/wbdv465">Rails Drexel Course</a></li>
-    </ul>
-  </section> -->
+  <!--
+    <section class="span5 span-lead">
 
-  <section class="span5 span-lead">
+      <h3>Recent Articles</h3>
+      <ul class="unstyled posts">
+        {% for post in site.posts %}
+          <li class="post__summary">
+            <span class="post__date">{{ post.date | date_to_string }}</span>
+            <br>
+            <a class="post__link" href="{{ post.url }}">{{ post.title }}</a>
+            <div class="post__excerpt">
+              {{post.excerpt}}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
 
-    <h3>Recent Articles</h3>
-    <ul class="unstyled posts">
-      {% for post in site.posts %}
-        <li class="post__summary">
-          <span class="post__date">{{ post.date | date_to_string }}</span>
-          <br>
-          <a class="post__link" href="{{ post.url }}">{{ post.title }}</a>
-          <div class="post__excerpt">
-            {{post.excerpt}}
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
+    </section>
+  -->
 
-  </section>
-
-  <section class="span3">
-    <h3>Find me.</h3>
+  <section class="span3 span-lead">
+    <!-- <h3>Find me.</h3> -->
     <ul class="unstyled">
       <li><a href="http://www.linkedin.com/pub/matt-duffy/13/b30/955">LinkedIn Profile</a></li>
-      <!-- <li>Twitter: <a href="http://twitter.com/mttdffy">@mttdffy</a></li> -->
-      <li>Github: <a href="https://github.com/mttdffy">mttdffy</a></li>
+      <li>GitHub: <a href="https://github.com/mttdffy">mttdffy</a></li>
     </ul>
   </section>
 </div>
